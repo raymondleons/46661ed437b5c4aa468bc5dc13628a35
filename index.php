@@ -37,7 +37,7 @@
                     </div>
                     <div class="m-t-30 m-b-20">
                         <div class="col-xs-12 text-xs-center">
-                            <h6 class="text-muted text-uppercase m-b-0 m-t-0">Kertas Kaca</h6>
+                            <h6 class="text-muted text-uppercase m-b-0 m-t-0">Kertas Kacas</h6>
                         </div>
                        
                             <div class="form-group text-center m-t-30">
