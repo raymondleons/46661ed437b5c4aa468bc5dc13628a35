@@ -57,8 +57,9 @@ include('../../config/header.php'); //header ?>
 <?php include('../../config/footer.php'); //footer ?>
 
 <script type="text/javascript">
-$(function () {
-    $('.select2').select2()
-    $('#table').DataTable()
-  })
+
+
+$(document).ready( function () {
+    $('#table').DataTable();
+} );
 </script>

@@ -32,13 +32,8 @@
         <script src="<?= base_url('assets/template/js/jquery.core.js'); ?>"></script>
         <script src="<?= base_url('assets/template/js/jquery.app.js'); ?>"></script>
 
-        <!-- DataTables -->
-        <script src="<?= base_url('assets/template/bower_components/datatables.net/js/jquery.dataTables.min.js'); ?>"></script>
-        <script src="<?= base_url('assets/template/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js'); ?>"></script>
-        
-        <!-- select2 -->
-        <script src="<?= base_url('assets/template/bower_components/select2/dist/js/select2.full.min.js'); ?>"></script>
-
+        <!-- Datatable js -->
+        <script src="<?= base_url('assets/template/js/jquery.dataTables.min.js'); ?>"></script>
         
     </body>
 </html>
