@@ -49,6 +49,7 @@
     </form>
 
     <script type="text/javascript">
+        //fungsi untuk submit form edit
     	var frmedit = $('#formedit');
 
 	    frmedit.submit(function (e) {
@@ -60,8 +61,41 @@
 	            url: 'menu_edit_conf',
 	            data: frmedit.serialize(),
 	            success: function (data) {
-	                location.reload();
-	                //console.log(data);
+	                //Edit menu Berhasil
+
+                $('#editmenuModal').modal('hide'); // <-- Tutup Modal Edit
+
+                //saat ajax dijalanin ke menu_edit_conf , bakal return 0-gagal atau 1-berhasil
+                if(data=="1"){
+                    swal({ //sweet Alert berhasil
+                      title: "Berhasil!",
+                      text: "Edit menu berhasil!",
+                      type: "success",
+                      showCancelButton: false,
+                      confirmButtonClass: "btn-primary",
+                      confirmButtonText: "OK",
+                      closeOnConfirm: true
+                    },
+                    function(){
+                        //refresh page setelah tekan oke di tombol sukses
+                      location.reload();
+                    });
+                }else{
+                    swal({ //sweet Alert Gagal
+                      title: "Edit Menu Gagal!",
+                      text: "Edit menu Gagal!", // kalau mau lihat debug error ganti aja jadi => text: data,
+                      type: "error",
+                      showCancelButton: false,
+                      confirmButtonClass: "btn-primary",
+                      confirmButtonText: "OK",
+                      closeOnConfirm: true
+                    },
+                    function(){
+                        //refresh page setelah tekan oke di tombol sukses
+                      //location.reload();
+                    });
+                }
+                
 	            },
 	            error: function (data) {
 	                console.log('Masukan Sub Menu gagal');

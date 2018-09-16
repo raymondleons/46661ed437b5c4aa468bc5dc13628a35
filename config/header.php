@@ -36,6 +36,9 @@
 
         <!-- Select2 CSS -->
         <link href="<?= base_url('assets/template/select2/dist/css/select2.min.css'); ?>" rel="stylesheet" type="text/css" />
+
+        <!-- Sweet Alert -->
+        <link href="<?= base_url('assets/template/plugins/bootstrap-sweetalert/sweet-alert.css'); ?>" rel="stylesheet" type="text/css">
         
 
         <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->

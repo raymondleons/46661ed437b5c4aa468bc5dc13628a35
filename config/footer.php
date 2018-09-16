@@ -38,5 +38,8 @@
         <!-- Select2 js -->
         <script src="<?= base_url('assets/template/select2/dist/js/select2.full.min.js'); ?>"></script>
         
+        <!-- Sweet Alert JS -->
+        <script src="<?= base_url('assets/template/plugins/bootstrap-sweetalert/sweet-alert.min.js'); ?>"></script>
+        <script src="<?= base_url('assets/template/pages/jquery.sweet-alert.init.js'); ?>"></script>
     </body>
 </html>
