@@ -92,7 +92,7 @@ include('../../config/header.php'); //header ?>
                 $("#editsub").css("display", "inline-block");
                 $("#deletesub").css("display", "inline-block");
                 //ajax(rowid);
-
+ //roman
             }
             
         }   
