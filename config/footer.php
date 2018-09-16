@@ -34,6 +34,9 @@
 
         <!-- Datatable js -->
         <script src="<?= base_url('assets/template/js/jquery.dataTables.min.js'); ?>"></script>
+
+        <!-- Select2 js -->
+        <script src="<?= base_url('assets/template/select2/dist/js/select2.full.min.js'); ?>"></script>
         
     </body>
 </html>
