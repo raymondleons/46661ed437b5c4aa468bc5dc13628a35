@@ -12,7 +12,7 @@
 
         <!-- App title -->
         <title>Pemira - In Develop</title>
-
+        qwerty
         <!-- App CSS -->
         <link href="<?= base_url('assets/template/css/style.css'); ?>" rel="stylesheet" type="text/css" />
 
