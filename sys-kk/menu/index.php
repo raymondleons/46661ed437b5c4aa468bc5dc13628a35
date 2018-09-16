@@ -16,7 +16,7 @@ include('../../config/header.php'); //header ?>
                 	<div class="col-md-9"><h4> Menu </h4></div>
                 	<div class="well pull-right"> 
                 	<button class="btn btn-success " data-toggle="modal" data-target="#myModal"> <i class="fa fa-plus"></i> </button>
-                	<button class="btn btn-primary " id="edit" style="display: none;"> <i class="fa fa-pencil"></i> </button>
+                	<button class="btn btn-primary" data-toggle="modal" data-target="#editmenuModal" id="edit" style="display: none;" onclick="editmenu()"> <i class="fa fa-pencil"></i> </button>
                 	<button class="btn btn-danger " id="delete" style="display: none;"> <i class="fa fa-close"></i> </button>
                 	</div>
                 </div><br>
@@ -239,6 +239,28 @@ include('../../config/header.php'); //header ?>
 </div>  
 <!-- end modal -->
 
+ <!-- Modal edit  menu-->
+<div id="editmenuModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title"><i class='fa fa-pencil'></i> Edit  Menu</h4>
+      </div>
+      <div class="modal-body" id="modalbody-editmenu">
+        Loading Data
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>  
+<!-- end modal -->
+
 <script type="text/javascript">
     //Tambah Menu
     var frm = $('#formtambah');
@@ -282,6 +304,27 @@ include('../../config/header.php'); //header ?>
             },
         });
     });
+</script>
+
+<script type="text/javascript">
+    //edit menu
+    function editmenu(){
+        $.ajax({
+            type: 'POST',
+            url: 'menu_edit',
+            data: 'id='+parentid,
+            success: function (data) {
+                //location.reload();
+                console.log(data);
+                $("#modalbody-editmenu").empty();
+                $("#modalbody-editmenu").append(data);
+            },
+            error: function (data) {
+                console.log('Ambil Gagal');
+                console.log(data);
+            },
+        });
+    }
 </script>
 <!-- ============================================================== -->
 <?php include('../../config/footer.php'); //footer ?>
