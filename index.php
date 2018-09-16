@@ -1,4 +1,4 @@
-<!DOCTYPE html>
++<!DOCTYPE html>
 <html>
 <?php include 'config/config.php'; ?>
     <head>
@@ -11,8 +11,13 @@
         <link rel="shortcut icon" href="<?= base_url('assets/template/images/favicon.ico'); ?>">
 
         <!-- App title -->
+<<<<<<< HEAD
         <title>Pemira - In Develop</title>
         qwerty
+=======
+        <title>Pemira - In Developasdasdasd</title>
+
+>>>>>>> 3f1540c4b37dfa77f46f4eeabd8ff62144ece009
         <!-- App CSS -->
         <link href="<?= base_url('assets/template/css/style.css'); ?>" rel="stylesheet" type="text/css" />
 
