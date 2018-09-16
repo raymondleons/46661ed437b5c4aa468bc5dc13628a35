@@ -20,6 +20,7 @@ include('../../config/header.php'); //header ?>
                 	<button class="btn btn-danger " id="delete" style="display: none;"> <i class="fa fa-close"></i> </button>
                 	</div>
                 </div><br>
+                
                 <table class="table table-striped table-bordered table-hover ">
                 	<tr>
 	                	<th>ID</th>
