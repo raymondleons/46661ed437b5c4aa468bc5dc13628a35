@@ -1,4 +1,4 @@
-+<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <?php include 'config/config.php'; ?>
     <head>
