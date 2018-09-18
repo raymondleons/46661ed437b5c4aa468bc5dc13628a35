@@ -41,5 +41,9 @@
         <!-- Sweet Alert JS -->
         <script src="<?= base_url('assets/template/plugins/bootstrap-sweetalert/sweet-alert.min.js'); ?>"></script>
         <script src="<?= base_url('assets/template/pages/jquery.sweet-alert.init.js'); ?>"></script>
+
+         <!-- Required datatable js -->
+        <script src="<?= base_url('assets/template/plugins/datatables/jquery.dataTables.min.js'); ?>"></script>
+        <script src="<?= base_url('assets/template/plugins/datatables/dataTables.bootstrap4.min.js'); ?>"></script>
     </body>
 </html>
