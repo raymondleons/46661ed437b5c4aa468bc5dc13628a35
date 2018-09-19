@@ -45,7 +45,7 @@
                      loaddata(); //load data ke index.php biar gak refresh gitu 
                      $('#ModalEdit').modal('hide'); // <-- Tutup Modal edit
                      $("#modalbody-editdata").empty(); // kosongin modal
-                     swal("Berhasil!", "Data berhasil di tambah!", "success"); //class itu success aau error
+                     swal("Berhasil!", "Data berhasil di edit!", "success"); //class itu success aau error
                      
                         $("#edit").css("display", "none"); //hide button edit n delete
                         $("#delete").css("display", "none");
